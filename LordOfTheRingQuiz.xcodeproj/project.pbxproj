@@ -13,6 +13,8 @@
 		3F04B3AD29A0E5F3006F835B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F04B3AB29A0E5F3006F835B /* Main.storyboard */; };
 		3F04B3AF29A0E5F4006F835B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F04B3AE29A0E5F4006F835B /* Assets.xcassets */; };
 		3F04B3B229A0E5F4006F835B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F04B3B029A0E5F4006F835B /* LaunchScreen.storyboard */; };
+		3F04B3BD29A0E64A006F835B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B3BC29A0E64A006F835B /* Question.swift */; };
+		3F04B3BF29A0E664006F835B /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B3BE29A0E664006F835B /* QuizBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3F04B3AE29A0E5F4006F835B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F04B3B129A0E5F4006F835B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F04B3B329A0E5F4006F835B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F04B3BC29A0E64A006F835B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		3F04B3BE29A0E664006F835B /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		3F04B3A429A0E5F3006F835B /* LordOfTheRingQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				3F04B3B929A0E60E006F835B /* Model */,
+				3F04B3BA29A0E616006F835B /* View */,
+				3F04B3BB29A0E61F006F835B /* Controller */,
 				3F04B3A529A0E5F3006F835B /* AppDelegate.swift */,
 				3F04B3A729A0E5F3006F835B /* SceneDelegate.swift */,
-				3F04B3A929A0E5F3006F835B /* ViewController.swift */,
-				3F04B3AB29A0E5F3006F835B /* Main.storyboard */,
 				3F04B3AE29A0E5F4006F835B /* Assets.xcassets */,
 				3F04B3B029A0E5F4006F835B /* LaunchScreen.storyboard */,
 				3F04B3B329A0E5F4006F835B /* Info.plist */,
 			);
 			path = LordOfTheRingQuiz;
+			sourceTree = "<group>";
+		};
+		3F04B3B929A0E60E006F835B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F04B3BC29A0E64A006F835B /* Question.swift */,
+				3F04B3BE29A0E664006F835B /* QuizBrain.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3F04B3BA29A0E616006F835B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F04B3AB29A0E5F3006F835B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F04B3BB29A0E61F006F835B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F04B3A929A0E5F3006F835B /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F04B3BF29A0E664006F835B /* QuizBrain.swift in Sources */,
 				3F04B3AA29A0E5F3006F835B /* ViewController.swift in Sources */,
+				3F04B3BD29A0E64A006F835B /* Question.swift in Sources */,
 				3F04B3A629A0E5F3006F835B /* AppDelegate.swift in Sources */,
 				3F04B3A829A0E5F3006F835B /* SceneDelegate.swift in Sources */,
 			);
